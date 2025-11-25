@@ -1,16 +1,47 @@
-# React + Vite
+# Tic-Tac-Toe AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An unbeatable Tic-Tac-Toe game with AI powered by the Minimax algorithm with Alpha-Beta Pruning.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🤖 Unbeatable AI using Minimax algorithm
+- 🎮 Two difficulty modes: Easy & Unbeatable
+- 📊 Score tracking across games
+- 🎨 Beautiful, responsive UI
+- ✨ Winning pattern animations
 
-## React Compiler
+## Algorithm
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The AI uses the **Minimax algorithm with Alpha-Beta Pruning**:
+- Evaluates all possible game states
+- Maximizes AI's score while minimizing player's score
+- Alpha-Beta pruning optimizes performance by eliminating unnecessary branches
+- Makes the AI unbeatable in "Unbeatable" mode
 
-## Expanding the ESLint configuration
+## Installation
+```bash
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## How to Play
+
+1. Choose difficulty: Easy or Unbeatable
+2. Click any cell to place your X
+3. AI will respond with O
+4. Try to get three in a row!
+5. In Unbeatable mode, the best you can do is draw!
+
+## Technologies Used
+
+- React
+- JavaScript
+- CSS3
+- Vite
+
